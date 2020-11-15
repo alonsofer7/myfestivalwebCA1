@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-color: #262626;
 }
@@ -33,9 +32,10 @@ body {
     background-color: #9855D4;
 }
 
-.fpurple{
+.fpurple {
     color: #9855D4;
 }
+
 .purple_2 {
     background-color: #af6ee8;
 }
@@ -89,7 +89,7 @@ body {
 
 
 
-.barra.bg-success-gradiant {
+.barra.bg-gradiant {
     background: #9855D4;
     background: -webkit-linear-gradient(legacy-direction(to right), #161616 0%, #1dc8cc 100%);
     background: linear-gradient(to right, #161616 0%, #9855D4 500%)
@@ -223,7 +223,7 @@ body {
     font-size: 18px;
     color: #262626;
     margin-top: 50px;
-    
+
 }
 
 
@@ -247,50 +247,146 @@ body {
 }
 
 .sbar suggestions {
-     padding: 100px;
+    padding: 100px;
 }
+
 .suggestions {
     font-size: 14px;
     display: inline-block;
     background: rgba(0, 0, 0, 0.6);
     padding: 0 15px;
     line-height: 32px;
-    margin-right: 30px;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin: 20px 30px 10px 0px;
+}
+
+
+.blackbg {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+/*MAIN CARDS (RECOMMENDATIONS)*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > div[class*='col-'] {
+    display: flex;
+}
+
+
+.main-events {
+    overflow: hidden;
+    position: relative;
+    background-position: center center;
+    cursor: pointer;
+    border: none;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.main-events img {
+    transition: all linear 0.25s;
+    width: 600px;
+    height: 400px;
+    border: none;
+
+}
+
+.main-events .ftitle {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 30px;
+    color: #f4f4f4;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+}
+
+
+.main-events .stitle {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #f4f4f4;
+    font-size: 13px;
+    transition: all linear 0.25s;
+}
+
+
+.main-events:hover img {
+    filter: grayscale(100%);
+}
+
+.main-events:hover .ftitle {
+    bottom: 80px;
+}
+
+.main-events:hover .stitle {
+    bottom: 60px;
 }
 
 
 
+/*other cards*/
+
+.other-events {
+    overflow: hidden;
+    position: relative;
+    background-position: center center;
+    cursor: pointer;
+    border: none;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.other-events .img {
+    width: 600px;
+    height: 400px;
+    border: none;
+}
+
+.btn-link {
+    color: #af6ee8;
+}
 
 
+/*footer stuff*/
 
+footer {
+    /*
+      background: #9855D4;
+    background: -webkit-linear-gradient(legacy-direction(to right), #161616 0%, #1dc8cc 100%);
+    background: linear-gradient(to right, #161616 0%, #9855D4 500%) */
+  background: #9855d4;
+  background: -webkit-linear-gradient(legacy-direction(to right), #161616 0%, #1dc8cc 100%);
+  background: linear-gradient(to right, #161616 0%, #9855d4 500%);
+  color: #f4f4f4;
+  
+}
 
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
 
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
 
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
 
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
 
-
-
-
-
-
-/*<nav class="navbar navbar-expand-lg fblack">
-
-        <div class="container">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link d-flex justify-content-start" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-
-            </div>
-            <a class="navbar-brand align-middle" href="#">
-                <img src="pics/dwdw.png" alt="Logo" class="d-flex justify-content-center" style="width:50px; padding:6px;">
-                <p class="whiteF1 font1 boldF d-flex justify-content-center">FESTIVALES</p>
-
-            </a>
-            <strong class="font1 whiteF1 boldF">FESTIVALS</strong>
-
-
-        </div>
-    </nav>*/
