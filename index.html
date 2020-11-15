@@ -7,23 +7,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-    link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:ital,wght@0,400;1,300;1,400&family=IBM+Plex+Serif:ital,wght@0,400;1,300;1,600&display=swap" rel="stylesheet">
 
     <title>World festivals</title>
 </head>
 
-<body style="background-color: #262626">
-    <nav class="navbar navbar-sticky" style="background-color: #161616;">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="logoo.png" alt="Logo" style="width:60px;">
-            </a>
-        </div>
-    </nav>
+<body class="sblack">
+    <div class="barra sticky-top bg-success-gradiant">
+        <div class="">
+            <!-- Header 1 code -->
+            <nav class="navbar navbar-expand-lg h2-nav font2"> <a class="navbar-brand" href="#" src="pics/logoo.png">
+                    <img src="pics/dwdw.png" style="width: 40px; height: 40px;">
 
+                </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header2" aria-controls="header2" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-menu"></span> </button>
+                <div class="collapse navbar-collapse hover-dropdown" id="header2">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item dropdown position-relative"> <a class="nav-link dropdown-toggle" href="#" id="h2-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Our Festivals <i class="fa fa-angle-down ml-1 font-12"></i> </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fblack" href="#">Dublin</a></li>
+                                <li><a class="dropdown-item fblack" href="#">Madrid</a></li>
+                                <li><a class="dropdown-item fblack" href="#">Rome</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a class="dropdown-item fblack" href="#">Prague</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a class="dropdown-item fblack" href="#">Venice</a></li>
+                                <li><a class="dropdown-item fblack" href="#">Amsterdam</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#">Login</a></li>
+                        <li class="nav-item"><a class="btn rounded-pill btn-dark py-2 px-4" href="#">Sign up</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- END OF NAV AND SEARCH BAR -->
+
+    <main role="main">
+        <div class="sbar" src="pics/fondo1.jpg">
+            <form>
+                <fieldset>
+                    <div class="inner-form">
+                        <h1 class="whiteF1 font3 d-flex bold justify-content-center" style="padding-bottom:30px; font-size: 41px;">With us you wont miss anything!</h1>
+
+                        <div class="input-field">
+                            <button class="btn-search" type="button">
+                                <img src="icons/search.svg" style="width: 30px; height: 55px;">
+                            </button>
+                            <input id="search" type="text">
+                        </div>
+
+                    </div>
+                    <div class="whiteF2 font2 suggestions">
+                        <span>Rock</span>
+                    </div>
+                     <div class="whiteF2 font2 suggestions">
+                        <span>Electro</span>
+                    </div>
+                     <div class="whiteF2 font2 suggestions">
+                        <span>Jazz</span>
+                    </div>
+                    <div class="whiteF2 font2 suggestions">
+                        <span>Rap</span>
+                    </div>
+                    
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="py-5">
+            <div class="container">
+                <h1 class="fpurple font1 d-flex bold justify-content-center " style="padding-bottom:30px; font-size: 41px;">What we recommend:</h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <h3 style="text-align: center">MADRID</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Gluten-free fam shabby chic whatever, knausgaard chia mlkshk.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </main>
 
 
 
@@ -38,6 +126,4 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-
-</html>
+</body></html>

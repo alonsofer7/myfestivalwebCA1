@@ -1,27 +1,46 @@
-#html
-
-----COLORS----
-.black1 {
-    background-color: #161616;
+#html * {
+    box-sizing: border-box;
 }
 
-.black2 {
+
+body {
     background-color: #262626;
 }
 
-.black3 {
+/*colours and stuff*/
+
+.fblack {
+    background-color: #161616;
+}
+
+.sblack {
+    background-color: #262626;
+}
+
+.tblack {
     background-color: #393939;
 }
 
-.purple1 {
+.white1 {
+    background-color: #ffff;
+}
+
+.white2 {
+    background-color: #f4f4f4;
+}
+
+.purple_1 {
     background-color: #9855D4;
 }
 
-.purple2 {
+.fpurple{
+    color: #9855D4;
+}
+.purple_2 {
     background-color: #af6ee8;
 }
 
-.purple3 {
+.purple_3 {
     background-color: #af6ee8;
 }
 
@@ -36,8 +55,6 @@
 .alertGreen {
     background-color: #24a148;
 }
-
-----FONTS----
 
 .font1 {
     font-family: 'IBM Plex Mono', monospace;
@@ -54,3 +71,226 @@
 .italicF {
     font-style: italic;
 }
+
+.boldF {
+    font-style: bold;
+}
+
+.whiteF1 {
+    color: #ffff;
+}
+
+.whiteF2 {
+    color: #f4f4f4;
+}
+
+
+/*navbar*/
+
+
+
+.barra.bg-success-gradiant {
+    background: #9855D4;
+    background: -webkit-linear-gradient(legacy-direction(to right), #161616 0%, #1dc8cc 100%);
+    background: linear-gradient(to right, #161616 0%, #9855D4 500%)
+}
+
+.barra .font-12 {
+    font-size: 12px
+}
+
+.barra .dropdown-item {
+    padding: 8px 1rem;
+    color: #393939;
+
+}
+
+.barra .h2-nav .navbar-nav .nav-item .nav-link {
+    padding: 12px 0px;
+    color: #ffffff;
+    font-weight: 400
+}
+
+.barra .h2-nav .navbar-nav .nav-item .nav-link:hover {
+    color: #f4f4f4
+}
+
+.barra .h2-nav .navbar-nav .nav-item {
+    margin: 0 30px;
+
+}
+
+@media (min-width: 1024px) {
+    .header2 .navbar-nav > .dropdown .dropdown-menu {
+        min-width: 210px;
+        margin-top: 0px
+    }
+}
+
+@media (min-width: 1024px) {
+    .header2 .dropdown-submenu:hover > .dropdown-menu {
+        display: block
+    }
+}
+
+.header2 .dropdown-toggle::after {
+    display: none
+}
+
+@media (min-width: 1024px) {
+    .header2 .hover-dropdown .navbar-nav > .dropdown:hover > .dropdown-menu {
+        display: block;
+        margin-top: 0px;
+    }
+}
+
+.barra .btn-dark {
+    color: #f4f4f4;
+    background-color: #262626;
+    border-color: #161616
+}
+
+.barra .btn-dark:hover {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124
+}
+
+.barra .h2-nav .navbar-nav .nav-item .btn {
+    opacity: 0.5
+}
+
+.barra .h2-nav .navbar-nav .nav-item .btn:hover {
+    opacity: 1
+}
+
+.barra .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 0;
+    display: none;
+}
+
+
+
+
+/*search bar*/
+
+.sbar {
+    min-height: 938px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url(../pics/fondo1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.sbar form {
+    width: 100%;
+    max-width: 720px;
+    ;
+}
+
+.sbar form legend {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 59px;
+}
+
+.sbar form .inner-form {
+    width: 100%;
+    margin-bottom: 17px;
+
+}
+
+
+.sbar form .inner-form .input-field input {
+    height: 100%;
+    width: 50%;
+    border: 10px;
+    border-color: #393939;
+    background: #f4f4f4;
+    display: block;
+    width: 100%;
+    padding: 10px 32px 10px 70px;
+    font-size: 18px;
+    color: #262626;
+    margin-top: 50px;
+    
+}
+
+
+.sbar form .inner-form .input-field .btn-search {
+    width: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    left: 1260px;
+    height: 47px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: right;
+    align-items: center;
+}
+
+.sbar suggestions {
+     padding: 100px;
+}
+.suggestions {
+    font-size: 14px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0 15px;
+    line-height: 32px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<nav class="navbar navbar-expand-lg fblack">
+
+        <div class="container">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link d-flex justify-content-start" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+
+            </div>
+            <a class="navbar-brand align-middle" href="#">
+                <img src="pics/dwdw.png" alt="Logo" class="d-flex justify-content-center" style="width:50px; padding:6px;">
+                <p class="whiteF1 font1 boldF d-flex justify-content-center">FESTIVALES</p>
+
+            </a>
+            <strong class="font1 whiteF1 boldF">FESTIVALS</strong>
+
+
+        </div>
+    </nav>*/
